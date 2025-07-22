@@ -1,0 +1,70 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form></title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+<h1 id="title">Survey Form</h1>
+  <p id="description">Thank you for providing feedback</p>
+  <form id="survey-form">
+    <label id="name-label" for "name-label">Name:<input id="name" type="text" placeholder="Enter full name" required/></label><br></br>
+<label id="email-label" for="email-label">Email:<input id="email" type="email" placeholder="Enter email address" required/></label><br></br>
+<label id="number-label" for="number-label">Age:<input id="number" type="number" min="18" max="99" placeholder="18"/></label><br></br>
+<label id="dropdown-label" for="dropdown-label"> How would you rate your experience with us?
+<select id="dropdown" name="dropdown">
+  <option value="">choose one</option>
+  <option value="1">Poor
+    <option value="2">Ok</option>
+    <option value="3">Good</option>
+    <option value="4">Excellent</option>
+</select><br></br>
+ <fieldset>
+  <p id="recommendation-likehihood">How likely are you to recommend us to others?</p>
+<label for="radio-very-likely"><input id="radio-very-likely" type="radio" name="recommendation" value="recommendation" class="inline" /> Very Likely</label><br></br>
+<label for="radio-somewhat-likely"><input id="radio-somewhat-likely" type="radio" name="recommendation" value="recommendation" class="inline" /> Somewhat Likely</label><br></br>
+<label for="radio-neutral"><input id="radio-neutral" type="radio" name="recommendation" value="recommendation" class="inline" /> Neutral</label><br></br>
+<label for="radio-somewhat-unlikely"><input id="radio-somewhat-unlikely" type="radio" name="recommendation" value="recommendation" class="inline"> Somewhat Unlikely</label><br></br>
+<label for="radio-very-unlikely"><input id="radio-very-unlikely" type="radio" name="recommendation" value="recommendation" class="inline"> Very Unlikely</label><br></br>
+<p> How did you hear about us?</p>
+<label for="referral-source"><input id="referral-source" type="checkbox" name="referral-source" value="referral-source" class="inline"> Facebook</label><br></br>
+<label for="referral-source"><input id="referral-source" type="checkbox" name="referral-source" value="referral-source" class="inline"> Instagram</label><br></br>
+<label for="referral-source"><input id="referral-source" type="checkbox" name="referral-source" value="referral-source" class="inline"> Twitter</label><br></br>
+<label for="referral-source"><input id="referral-source" type="checkbox" name="referral-source" value="referral-source" class="inline"> Google</label><br></br>
+<p id="additonal-comments">Please give any additional comments:</p>
+<textarea rows'"10" cols="40">Comments here</textarea>
+</fieldset>
+<button id="submit" type="submit" class="center-button">Submit</button
+      </form>
+  </body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+h1, p{
+  text-align: center;
+}
+body {
+background-color: cyan;
+color: black;
+font-family: Helvetica;
+padding: 10px solid;
+}
+fieldset{
+  background-color: gray;
+  padding: 2px;
+}
+.center-button {
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+}
+
+
+** end of styles.css **
+
